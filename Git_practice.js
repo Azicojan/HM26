@@ -9,6 +9,10 @@ on your local file before committing them. First, you make some changes then add
 changes into stage area by applying 'git add'. In order to delete these changes, you 
 can use either 'git reset' or 'git checkout <branch name> -- <file name>, or -- .`);
 console.log(`I've confused a little bit 'git reset' with 'git checkout'. Well, 
+<<<<<<< HEAD
 'git reset' undoes staging a file but doesn't delete file, whereas 'git checkout' deletes
+=======
+'git reset' unstages a file but doesn't deletes file, whereas 'git checkout' deletes
+>>>>>>> d50e245b1fcbf6673259cda7614a2c240348adfe
 the file completely. Also, '-- .' hasn't worked with 'git checkout', so 'git checkout
 <branch name> -- <file name> is the only way to delete a file as well that worked for me so far.'`);
