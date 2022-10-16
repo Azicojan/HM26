@@ -8,3 +8,7 @@ console.log(`This message confirms that I figured out how to cancel all staged c
 on your local file before committing them. First, you make some changes then add these 
 changes into stage area by applying 'git add'. In order to delete these changes, you 
 can use either 'git reset' or 'git checkout <branch name> -- <file name>, or -- .`);
+console.log(`I've confused a little bit 'git reset' with 'git checkout'. Well, 
+'git reset' unstages a file but doesn't deletes file, whereas 'git checkout' deletes
+the file completely. Also, '-- .' hasn't worked with 'git checkout', so 'git checkout
+<branch name> -- <file name> is the only way to delete a file as well that worked for me so far.'`);
